@@ -1,13 +1,10 @@
-.PHONY: run test requirements migrate
+.PHONY: env run user
+
+env:
+	cp .env.example .env
 
 run:
-	python manage.py runserver
+	docker-compose up -d
 
-test:
-	python -m pytest -v
-
-requirements:
-	pip install -r requirements.txt
-
-migrate:
-	python manage.py migrate
+user:
+	docker-compose exec web python manage.py createsuperuser

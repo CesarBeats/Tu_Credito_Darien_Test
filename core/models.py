@@ -1,7 +1,7 @@
 from django.db import models
 from django.core.validators import MinValueValidator, MaxValueValidator
 
-# Create your models here.
+
 class Banco(models.Model):
     class TipoBanco(models.TextChoices):
         PRIVADO = 'PRIVADO', 'Privado'
