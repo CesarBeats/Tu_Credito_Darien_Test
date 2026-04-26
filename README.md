@@ -8,15 +8,15 @@ Clonar el presente repositorio.
 
 El proyecto cuenta con un archivo `docker-compose` para levantar el backend y la base de datos, usando Python3.11 y Django 5. Sin embargo, es necesario configurar primeramente las variables de entorno. Para ello, está un archivo .`env.example` que debe ser transformado a su contraparte `.env`. Basta con correr el comando de copia para hacer el renombramiento:
 ```
-cp .env.example .env
+make env
 ```
 Seguidamente, se debe levantar el contenedor. Esto ya levanta la aplicación, configura la base de datos, y corre migraciones:
 ```
-docker-compose up -d
+make run
 ```
 Es necesario crear un superuser de Django para inciar sesión en el panel de admin. Para ello, se puede usar el comando de `docker-compose` correspondiente:
 ```
-docker-compose exec web python manage.py createsuperuser
+make superuser
 ```
 Después de crear un usuario y contraseña, ya podemos abrir la aplicación. La misma se encuentra arriba en localhost, en el puerto 8000. 
 
