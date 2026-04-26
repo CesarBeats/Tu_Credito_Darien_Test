@@ -1,8 +1,10 @@
+"""Modelos de datos de la app core: Banco, Cliente y Crédito."""
 from django.db import models
 from django.core.validators import MinValueValidator, MaxValueValidator
 
 
 class Banco(models.Model):
+    """Entidad bancaria que puede ser de tipo privado o de gobierno."""
     class TipoBanco(models.TextChoices):
         PRIVADO = 'PRIVADO', 'Privado'
         GOBIERNO = 'GOBIERNO', 'Gobierno'
@@ -21,6 +23,7 @@ class Banco(models.Model):
 
 
 class Cliente(models.Model):
+    """Persona natural o jurídica asociada a un banco, con datos de contacto."""
     class TipoPersona(models.TextChoices):
         NATURAL = 'NATURAL', 'Natural'
         JURIDICO = 'JURIDICO', 'Jurídico'
@@ -55,6 +58,7 @@ class Cliente(models.Model):
 
 
 class Credito(models.Model):
+    """Producto crediticio vinculado a un cliente y un banco."""
     class TipoCredito(models.TextChoices):
         AUTOMOTRIZ = 'AUTOMOTRIZ', 'Automotriz'
         HIPOTECARIO = 'HIPOTECARIO', 'Hipotecario'
