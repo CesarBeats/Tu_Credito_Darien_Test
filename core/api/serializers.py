@@ -1,4 +1,4 @@
-# Serializers de la app core del proyecto tu_credito.
+"""Serializers de la API REST con validaciones para Banco, Cliente y Crédito."""
 from datetime import date
 from rest_framework import serializers
 from ..models import Banco, Cliente, Credito

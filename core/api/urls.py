@@ -1,3 +1,4 @@
+"""Rutas de la API REST: registra los ViewSets de Banco, Cliente y Crédito."""
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
 from .views import BancoViewSet, ClienteViewSet, CreditoViewSet
