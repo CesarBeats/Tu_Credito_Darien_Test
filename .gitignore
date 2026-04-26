@@ -3,3 +3,17 @@
 
 # Do not ignore .env.example
 !.env.example
+
+# General Environment Files
+.env
+.venv/
+env/
+venv/
+ENV/
+
+# Django specific
+db.sqlite3
+__pycache__/
+*.py[cod]
+*$py.class
+local_settings.py
