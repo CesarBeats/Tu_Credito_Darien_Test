@@ -7,6 +7,7 @@ from datetime import timedelta
 # Model tests – Banco
 # ---------------------------------------------------------------------------
 
+
 @pytest.mark.django_db
 class TestBancoModel:
     def test_str_representation(self, banco):
