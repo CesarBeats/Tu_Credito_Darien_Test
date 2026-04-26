@@ -14,7 +14,7 @@ Seguidamente, se debe levantar el contenedor. Esto ya levanta la aplicación, co
 ```
 make run
 ```
-Es necesario crear un superuser de Django para inciar sesión en el panel de admin. Para ello, se puede usar el comando de `docker-compose` correspondiente:
+Es necesario crear un superuser de Django para inciar sesión en el panel de admin. Para ello, se puede usar el comando correspondiente:
 ```
 make superuser
 ```
