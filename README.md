@@ -6,7 +6,7 @@ Los requisitos con su respectiva versión se encuentran en el archivo requiremen
 ## Pasos para levantarlo en local
 Clonar el presente repositorio.
 
-El proyecto cuenta con un archivo `docker-compose` para levantar el backend y la base de datos, usando Python3.11 y Django 5. Sin embargo, es necesario configurar primeramente las variables de entorno. Para ello, está un archivo .`env.example` que debe ser transformado a su contraparte `.env`. Basta con correr el comando de copia para hacer el renombramiento:
+El proyecto cuenta con un archivo `docker-compose` para levantar el backend y la base de datos, usando Python3.11 y Django 5. Sin embargo, es necesario configurar primeramente las variables de entorno. Para ello, está un archivo `.env.example` que debe ser transformado a su contraparte `.env`. Basta con correr el comando de copia para hacer el renombramiento:
 ```
 make env
 ```
